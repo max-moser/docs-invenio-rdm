@@ -546,11 +546,7 @@ Both rely on the [`migrate_thesis_to_dissertation.py`](./migrate_thesis_to_disse
 
 ```bash
 curl -LsSf https://raw.githubusercontent.com/inveniosoftware/docs-invenio-rdm/master/docs/releases/v14/migrate_thesis_to_dissertation.py -o /tmp/migrate_thesis_to_dissertation.py
-```
-
-```python
-# in `invenio shell`
-exec(open("/tmp/migrate_thesis_to_dissertation.py").read())
+invenio shell -i -- /tmp/migrate_thesis_to_dissertation.py
 ```
 
 Always test against a copy of your data first.
